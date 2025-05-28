@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Máquina Caza Muñecos - FSM</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>🎮 Máquina Caza Muñecos 🎮</h1>
+    <p>Usa <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> para mover la pinza y <kbd>Espacio</kbd> para atrapar.</p>
+  </div>
+
+  <div id="app-container">
+    <div id="left-panel">
+      <div id="controls">
+        <button id="insert-coin-btn">Insertar Moneda</button>
+        <button id="fill-areas-btn">Rellenar Áreas</button>
+        <button id="pickup-btn" disabled>Recoger Muñeco</button>
+      </div>
+
+      <div id="status-panel">
+        <h2>Estado General</h2>
+        <div id="machine-status">Esperando moneda...</div>
+
+        <h3>Estado de las Áreas</h3>
+        <ul id="areas-status-list"></ul>
+
+        <h3>Intentos Restantes: <span id="attempts-left">0</span></h3>
+      </div>
+    </div>
+
+    <div id="machine-container">
+      <div id="areas-container">
+        <div class="area" id="area-0">
+          <div class="area-label">Área 1</div>
+        </div>
+        <div class="area" id="area-1">
+          <div class="area-label">Área 2</div>
+        </div>
+        <div class="area" id="area-2">
+          <div class="area-label">Área 3</div>
+        </div>
+        <div class="area" id="area-3">
+          <div class="area-label">Área 4</div>
+        </div>
+        <div id="exit-area">Salida</div>
+      </div>
+
+      <div id="pinza">
+        <!-- La imagen de la pinza se inyectará por JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="App.js"></script>
+</body>
+
+  <footer class="footer">
+    <p>Desarrollado por Josh Sebastián López Murcia. <a href="https://github.com/joshmessi10/FromZero">FromZero ©</a></p>
+  </footer>
+</html>
