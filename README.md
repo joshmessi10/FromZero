@@ -4,6 +4,9 @@
 Este proyecto simula el funcionamiento de una máquina caza muñecos (tipo "claw machine") implementada con JavaScript, siguiendo el **paradigma de programación orientada a objetos (POO)** y una arquitectura **Modelo-Vista-Controlador (MVC)**.
 
 Para ejecutarlo, descarga el proyecto y abre el archivo index.html.
+
+![Image](https://github.com/user-attachments/assets/d2ee005f-f1c4-4c64-8ffb-985785ed50b8)
+
 ---
 
 ## 🧩 Estructura del Proyecto
