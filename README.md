@@ -1,57 +1,57 @@
 # 🎮 FROM ZERO
-## Proyecto FSM: Máquina Caza Muñecos
+## FSM Project: Claw Machine Simulator
 
-Este proyecto simula el funcionamiento de una máquina caza muñecos (tipo "claw machine") diseñada como **FSM (Máquina de Estados Finitos)** implementada con JavaScript, siguiendo el **paradigma de programación orientada a objetos (POO)** y una arquitectura **Modelo-Vista-Controlador (MVC)**.
+This project simulates the behavior of a **claw machine** (also known as a "UFO catcher"), designed as a **Finite State Machine (FSM)** and implemented in **JavaScript**, following the **Object-Oriented Programming (OOP)** paradigm and an **Model-View-Controller (MVC)** architecture.
 
-👉 [Pruébalo](https://joshmessi10.github.io/FromZero/)
+👉 [Try it live](https://joshmessi10.github.io/FromZero/)
 
 ![Image](https://github.com/user-attachments/assets/d2ee005f-f1c4-4c64-8ffb-985785ed50b8)
 
 ---
 
-## 🧩 Estructura del Proyecto
+## 🧩 Project Structure
 
-El código está organizado en tres paquetes principales:
+The code is organized into three main packages:
 
-### 1. 📦 Modelo (`modelo`)
-Contiene la lógica interna y los datos del sistema:
+### 1. 📦 Model (`modelo`)
+Contains the internal logic and system data:
 
-- `Area`: Representa una de las 5 áreas de la máquina (4 para jugar, 1 de salida). Puede contener un muñeco o estar vacía.
-- `Maquina`: Gestiona la lógica de intentos, estado general de la máquina, captura de muñecos, y recarga de áreas.
+- `Area`: Represents one of the 5 machine zones (4 playable zones, 1 drop-off zone). Each can hold a toy or be empty.
+- `Maquina`: Manages attempts, general state, toy capturing, and automatic area reloads.
 
-### 2. 🖼️ Vista (`vista`)
-Encargada de la interfaz visual:
+### 2. 🖼️ View (`vista`)
+Handles the visual interface:
 
-- `Vista`: Renderiza el estado de la máquina y las áreas en el navegador. Actualiza la UI, maneja los botones, pinta la pinza y muestra los estados.
+- `Vista`: Renders the machine's current state and areas in the browser. Updates the UI, manages button interactions, draws the claw, and displays state transitions.
 
-### 3. 🧠 Controlador (`controlador`)
-Orquesta la interacción entre la lógica y la interfaz:
+### 3. 🧠 Controller (`controlador`)
+Orchestrates the interaction between logic and interface:
 
-- `Controlador`: Captura eventos del usuario (teclado, botones), coordina los cambios de estado, y gestiona la animación de la pinza.
-
----
-
-## 🎮 Comportamiento y Reglas
-
-### ▶️ Flujo Inicial
-1. Al iniciar, la máquina realiza una **verificación inicial**.
-2. Si hay muñecos disponibles, queda lista para jugar.
-3. Si no hay muñecos, entra en **modo de recarga automática**.
-
-### 💰 Inserción de Moneda
-- Al insertar una moneda, se activan **3 intentos**.
-- El jugador puede mover la pinza con teclas `W`, `A`, `S`, `D`.
-
-### 🕹️ Modo de Juego
-- Al presionar `espacio`, se intenta atrapar el muñeco bajo la pinza.
-- Si se captura un muñeco, el jugador debe llevarlo al área de salida y presionar `espacio` para soltarlo.
-- Luego, se debe presionar el botón "Recoger Peluche" para finalizar.
-
-### 🔄 Recarga
-- Cuando ya no hay más muñecos en el tablero, la máquina entra en **modo de recarga automática**.
+- `Controlador`: Captures user events (keyboard, buttons), coordinates state changes, and manages claw animation.
 
 ---
 
-## Créditos
+## 🎮 Behavior & Game Rules
 
-Desarrollado por Josh Sebastián López Murcia 
+### ▶️ Initial Flow
+1. On startup, the machine performs an **initial system check**.
+2. If toys are available, the machine enters **ready-to-play** mode.
+3. If no toys are left, it enters **auto-reload mode**.
+
+### 💰 Coin Insertion
+- Inserting a coin grants **3 attempts**.
+- Players can move the claw using the keys `W`, `A`, `S`, `D`.
+
+### 🕹️ Game Mode
+- Pressing `space` triggers an attempt to grab a toy directly below the claw.
+- If successful, the player must carry the toy to the drop-off area and press `space` again to release it.
+- Then, click the "Pick Up Toy" button to complete the round.
+
+### 🔄 Reload Mode
+- Once all toys have been collected, the machine automatically reloads itself and resets the game.
+
+---
+
+## 👨‍💻 Credits
+
+Developed by **Josh Sebastián López Murcia**
