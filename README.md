@@ -1,9 +1,9 @@
 # 🎮 FROM ZERO
 ## Proyecto FSM: Máquina Caza Muñecos
 
-Este proyecto simula el funcionamiento de una máquina caza muñecos (tipo "claw machine") implementada con JavaScript, siguiendo el **paradigma de programación orientada a objetos (POO)** y una arquitectura **Modelo-Vista-Controlador (MVC)**.
+Este proyecto simula el funcionamiento de una máquina caza muñecos (tipo "claw machine") diseñada como **FSM (Máquina de Estados Finitos)** implementada con JavaScript, siguiendo el **paradigma de programación orientada a objetos (POO)** y una arquitectura **Modelo-Vista-Controlador (MVC)**.
 
-Para ejecutarlo, descarga el proyecto y abre el archivo index.html.
+👉 [Pruébalo](https://joshmessi10.github.io/FromZero/)
 
 ![Image](https://github.com/user-attachments/assets/d2ee005f-f1c4-4c64-8ffb-985785ed50b8)
 
